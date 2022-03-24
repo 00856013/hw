@@ -32,5 +32,20 @@ public:
 		return (width * height);
 	}
 };
+class Circle : public Shape {
+public:
+	Circle(double a = 0, double b = 0) :Shape(a, b) { }
 
+	double area() {
+		return (width * width * PI);
+	}
+};
+class Triangle : public Shape {
+public:
+	Triangle(double a = 0, double b = 0) :Shape(a, b) { }
+
+	double area() {
+		return (width * height / 2);
+	}
+};
 #endif
